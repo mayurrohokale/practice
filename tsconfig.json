@@ -22,6 +22,11 @@
     "lib": [
       "ES2022",
       "dom"
+    ],
+    "typeRoots": [
+      "node_module/@types",
+      "node_module/@angular",
+      "node_modules/@angular/common/http"
     ]
   },
   "angularCompilerOptions": {
