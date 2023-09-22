@@ -14,12 +14,11 @@ export class EmployeesService {
 
   getAllemployees() : Observable<employees[]>{
     
-      return this.http.get<employees[]>(this.baseApiUrl + '/api/employees');
+      return this.http.get<employees[]>(this.baseApiUrl + '/api/Home/GetHomeList');
     
   }
 
   addEmployee(addEmployeeRequest: employees): Observable<employees>{
-  
-    return this.http.post<employees>(this.baseApiUrl + '/api/employees', addEmployeeRequest);
+    return this.http.post<employees>(this.baseApiUrl + '/api/Home/AddHome', addEmployeeRequest);
   }
 }

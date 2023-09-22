@@ -12,13 +12,13 @@ export class EmployeesListComponent {
     this.getEmployeeList();
   }
   ngOninit(): void {
-    debugger
+    
    
     
   }
   getEmployeeList()
   {
-debugger
+
     this.employeesService.getAllemployees()
     .subscribe({
       next: (employees:any) => { 
